@@ -1,0 +1,46 @@
+<header id="main-header">
+  <!--start social-->
+    <ul class="socials px-2 mb-0 py-2">
+        <li class="d-inline-block">
+          <button class="border-0 px-0" (click)="onNavigate()">
+            <i class="fa fa-instagram"></i>
+        </button>
+       </li> 
+      <li class="d-inline-block">
+        <button class="border-0 px-0" (click)="onNavigate2()">
+          <i class="fa fa-linkedin"></i>
+      </button>
+      </li> 
+      <li class="d-inline-block">
+        <button class="border-0 px-0" (click)="onNavigate3()">
+          <i class="fa fa-paper-plane"></i>
+      </button>
+      </li> 
+      <li class="d-inline-block">
+        <button class="border-0 px-0" (click)="onNavigate4()">
+          <i class="fa fa-whatsapp"></i>
+      </button>
+      </li> 
+    </ul>
+  <!--start main-menu-->
+  <div class="primary-menu text-start" [ngClass]="{show:toggleMenu,hide:!toggleMenu}">
+    <button class="border-0 d-block d-lg-none navigation-menu  position-absolute btn-navigate-menu" type="button" (click)="closemenu()">
+      <i class="fa fa-times text-white"></i>
+    </button>
+    <nav>
+      <ul class="list-unstyled pb-1 position-relative pt-3 pt-sm-0 px-sm-0 text-end">
+        <li class="d-block d-md-inline-block px-2"><a class="text-decoration-none" routerLink="home">صفحه اصلی</a></li>
+        <li class="d-block d-md-inline-block px-2"><a class="text-decoration-none" routerLink="news">اخبار</a></li>
+        <li class="d-block d-md-inline-block px-2"><a class="text-decoration-none" routerLink="products">محصولات</a></li>
+        <li class="d-block d-md-inline-block px-2"><a class="text-decoration-none" routerLink="contactus">تماس با ما</a></li>
+        <li class="d-block d-md-inline-block px-2"><a class="text-decoration-none" routerLink="aboutus">درباره ما</a></li>
+        <li class="d-block d-md-inline-block px-2"><a class="text-decoration-none" routerLink="login">ورود</a></li>
+    </ul>
+    </nav>
+  </div>
+  <button class="border-0 position-absolute btn-toggle-menu d-block d-lg-none btn-navigate-menu" type="button" (click)="togglemenu()">
+      <i class="fa fa-bars text-white"></i>
+  </button>
+</header>
+
+

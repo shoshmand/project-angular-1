@@ -1,0 +1,14 @@
+<!--main-carousel-->
+<section id="main-carousel">
+    <owl-carousel-o [options]="customOptions">
+        <ng-container *ngFor="let slide of slides">
+            <ng-template carouselSlide [id]="slide.id">
+                <img class="owl-item" [src]="slide.src" [alt]="slide.alt" [title]="slide.title"/>
+                <div class="position-absolute overly text-center d-none d-sm-block">
+                    <h2 class="h2">{{slide.title}}</h2>
+                    <p>{{slide.content}}</p>
+                </div>
+            </ng-template>
+        </ng-container>
+    </owl-carousel-o>
+</section>

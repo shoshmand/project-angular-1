@@ -1,0 +1,102 @@
+$small:768px;
+$medium:992px;
+#main-header{
+    ul{
+        &.socials{
+            background-color:#222222;
+            li{
+                padding:0 5px;
+                button{
+                    background-color:transparent;
+                    i{
+                        color:#ffffff;
+                    }
+                }
+                &:hover{
+                    button{
+                        i{
+                            color:rgba(236, 21, 91, 0.87);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    ul{
+        li{
+            padding:5px;
+            @media screen and (min-width:$medium){
+                padding:10px;
+            }
+        }
+    }
+    .primary-menu{
+        @media screen and (max-width:$small){
+            height:100%;
+            position:fixed;
+            top:0;
+            right:-100%;
+            background-color:#222222;
+            nav{
+                > ul{
+                    padding-right:15px;
+                }
+            }
+        }
+        nav{
+             > ul{
+                margin-bottom:0;
+                z-index:10;
+                @media screen and (min-width:$medium){
+                    margin-right:30%;
+                    margin-bottom:-48px;
+                    background-color:rgba(236, 21, 91, 0.87);
+                    position:absolute; 
+                }
+                &::after{
+                    @media screen and (min-width:$medium){
+                        content:"";
+                        transition:all 0.5s;
+                        position:absolute;
+                        right:-72px;
+                        content:"";
+                        height:100%;
+                        box-sizing:border-box;
+                        border-bottom:48px solid rgba(236,21,91,0.87);
+                        border-right:72px solid transparent;
+                        top:0;
+                    }
+                }
+                li{
+                    a{
+                        color:#ffffff;
+                    }
+                }
+            }
+        }
+        transition:all 0.35s;
+        width:100%;
+        z-index:10;
+        &.show{
+            right:0;
+        }
+    }
+    .btn-toggle-menu{
+        top:9px;
+    }
+    .btn-navigate-menu{
+        background-color:transparent;
+        left:11px;
+    }
+    .navigation-menu{
+        z-index:11;
+        top:10px;
+    }
+}
+
+
+
+
+
+
+

@@ -1,0 +1,21 @@
+$small: 768px;
+
+#main-carousel{
+    img{
+        &.owl-item{
+            min-height:200px; 
+            max-height:600px; 
+            filter:grayscale(100%);
+          }
+    }
+    .overly{
+        color:#ffffff;
+        @media screen and (min-width:$small){
+            bottom:40px;
+            left:100px;
+            padding:0 200px;
+
+        }
+    }
+}
+

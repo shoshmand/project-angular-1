@@ -1,0 +1,33 @@
+#products{
+    .wrapper{
+     img{
+         border-radius:10px;
+         &.item{
+            min-height:200px;
+            max-height:200px;
+         }
+     }
+    }   
+    .overly{
+    top:0;
+    }
+    .icons{
+    transform:translateX(-50%);
+    transition:all 0.2s ease-in-out;
+    background-color:rgba(236, 21, 91, 0.87);
+    border-radius:50% 50% 50% 0;
+    margin-top:-72px;
+    width:72px;
+    float:left;
+    margin-left:36px;
+    height:72px;
+    line-height:62px;
+    border:3px solid #f637a1;
+    img{
+    max-height:57px;
+    margin-right:6px;
+    vertical-align:middle;
+    margin-top: 4px;
+    }
+    }
+    }

@@ -1,0 +1,44 @@
+/* You can add global styles to this file, and also import other style files */
+
+$small: 768px;
+
+
+@font-face {
+    font-family:"iranyekan";
+    src: url("assets/fonts/iranyekan.ttf");
+}
+body{
+    font-family:"iranyekan";
+    position: relative;
+    direction:rtl;
+    text-align:right;
+}
+.shadow-box{
+    border:1px solid #E1E1E1;
+    border-radius:10px;
+    box-shadow: 0 6px 40px 0 rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+#main-carousel{
+    .owl-theme .owl-dots{
+        position:absolute;
+        bottom:10px;
+        width:100%;
+        @media screen and (max-width:$small){
+            bottom:2px;
+        }
+        span{
+            border-radius:0;
+            &:hover{
+                background-color:#ffffff;
+            }
+        }
+        .owl-dot{
+            &.active{
+                span{
+                    background-color:rgba(236, 21, 91, 0.87);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+#news{
+    img{
+        &.item-news-big{
+            max-height:300px;
+            min-height:300px;
+            border-radius:10px 10px 0 0;
+        }
+    }
+    a{
+        &.readmore{
+            &:hover{
+            color:#ec155b;
+            padding-right: 10px;
+            }
+            color:#000000;
+            transition:all 0.3s ease-in-out;
+        }
+    }
+}

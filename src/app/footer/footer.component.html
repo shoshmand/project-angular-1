@@ -1,0 +1,13 @@
+<footer class="mt-5" id="main-footer">
+    <div class="row mx-0">
+        <div class="col-12 col-sm-4"></div>
+        <div class="col-12 col-sm-4">
+            <form class="my-3 input-group membershipform" [formGroup]="membershipForm">
+                <div class="input-group">
+                    <input class="form-control rounded-0" type="text" formControlName="membership">
+                    <button class="border-0 d-block px-4 text-white" type="submit" (click)="addEmail()">عضویت</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</footer>

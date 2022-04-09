@@ -1,0 +1,23 @@
+#gallery{
+    .item-gallery{
+        img{
+            &.owl-item{
+                border-radius:5px 5px 0 0;
+                max-height:200px;
+                min-height:200px;
+                border-bottom:5px solid #ec155b;
+            }
+        }
+    }
+    .wrapper-item-gallery{
+        overflow-y:hidden;
+        &:hover{
+            .overly{
+            }
+        }
+    }
+    .overly{
+        background-color:rgba(236,21,91,0.87);
+        transition:all 300ms linear 0ms;   
+    }
+}

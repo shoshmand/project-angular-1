@@ -1,0 +1,20 @@
+<!--start gallery-->
+<section id="gallery" class="my-5 mx-4">
+    <h3 class="head text-center my-5">گالری تصاویر</h3>
+      <owl-carousel-o [options]="customOption">
+        <ng-container *ngFor="let gallery of galleries">
+          <ng-template carouselSlide [id]="gallery.id">
+            <div class="position-relative wrapper-item-gallery">
+              <div class="item-gallery">
+                <img class="owl-item" [src]="gallery.src" [alt]="gallery.alt" [title]="gallery.title">
+              </div>
+              <div class="overly w-100">
+                <h3 class="h6 text-white text-center py-3 mb-0">{{gallery.title}}</h3>
+              </div>
+          </div>
+          </ng-template>
+        </ng-container>
+      </owl-carousel-o>
+
+</section>
+

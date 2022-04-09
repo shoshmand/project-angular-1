@@ -1,0 +1,20 @@
+
+<!--start products-->
+<section class="my-5" id="products">
+    <h3 class="head text-center my-5">دسته بندی محصولات</h3>
+    <div class="row mx-0">
+        <ng-container *ngFor="let item of productCategory">
+            <div class="col-12 col-sm-3">
+                <div class="wrapper position-relative text-center shadow-box mb-3">
+                    <img class="w-100 item" [src]="item.src" alt="{{item.title}}">
+                    <div class="position-absolute overly w-100 h-100 text-white pt-5 mt-5">
+                        <span>{{item.title}}</span>
+                    </div>
+                    <div class="icons d-block overflow-hidden">
+                        <img [src]="item.icon" alt="">
+                    </div>
+                </div>
+            </div>
+        </ng-container>
+        </div>
+</section>

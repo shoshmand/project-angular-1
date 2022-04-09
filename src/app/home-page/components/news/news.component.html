@@ -1,0 +1,26 @@
+
+<!--start news-->
+<section id="news">
+    <div class="ul list-unstyled row mx-0 px-o">
+        <ng-container *ngFor="let item of news">
+            <li class="col-12 col-md-4 mb-3">
+              <div class="shadow-box">
+                <img class="w-100 item-news-big" [src]="item.src" alt="">
+                <ul class="list-unstyled pt-4 pb-3 px-3 mb-0">
+                    <li class="pb-2">
+                        <a>
+                            {{item.title}}
+                        </a>
+                    </li>
+                    <li>
+                        {{item.content}}
+                    </li>
+                    <li class="mt-2">
+                        <a class="text-decoration-none readmore" routerLink="/newsdetail">جزئیات بیشتر</a>
+                    </li>
+                </ul>
+              </div>
+            </li>
+        </ng-container>
+    </div>    
+</section>

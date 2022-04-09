@@ -1,0 +1,25 @@
+
+<!--knowledge-->
+<section id="knowledge">
+    <div class="py-5 text-center" [ngStyle]="{'background':getUrl(),'background-repeat':'no-repeat',
+    'background-size':'cover','background-position':'center center','background-attachment':'fixed','min-height':'400px'}">
+    <ul class="text-white mb-0 px-0">
+        <li class="d-block py-3">
+            <span class="h1">
+                {{knowledge.title}}
+            </span>
+        </li>
+        <li class="d-block">
+            {{knowledge.description}}
+        </li>
+        <ul class="mb-0 px-0 pt-5 mt-sm-5 btns">
+            <li class="d-inline-block mx-2">
+                <a class="text-decoration-none text-white py-2 px-3" routerLink="products">{{knowledge.myproducts}}</a>
+            </li>
+            <li class="d-inline-block mx-2">
+                <a class="text-decoration-none text-white py-2 px-3" routerLink="knowledgelist">{{knowledge.myknowledge}}</a>          
+            </li>
+        </ul>
+    </ul>
+    </div>
+</section>
